@@ -7,8 +7,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SettingServiceImpl implements SettingService{
+    private final SettingRepository settingRepository;
     @Autowired
-    private SettingRepository settingRepository;
+    public SettingServiceImpl(SettingRepository settingRepository) {
+        this.settingRepository = settingRepository;
+    }
 
     @Override
     public Setting list() {

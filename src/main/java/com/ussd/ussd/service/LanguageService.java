@@ -1,10 +1,9 @@
 package com.ussd.ussd.service;
 
 import com.ussd.ussd.model.Language;
+import java.util.List;
 
 public interface LanguageService {
-     Language list();
-     Language save();
-
-     Language save(Language setting);
+     List<Language> list();
+     Language save(Language language);
 }

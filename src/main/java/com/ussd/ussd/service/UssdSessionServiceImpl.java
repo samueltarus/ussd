@@ -24,7 +24,7 @@ public class UssdSessionServiceImpl implements UssdSessionService{
         return ussdSessionRepository.findByMsisdn(msisdn);
     }
     public UssdSession findBySessionId(String sessionId) {
-        System.out.printf("sessionId " +sessionId);
+        System.out.println("sessionId " +sessionId);
         return ussdSessionRepository.findBySessionId(sessionId);
     }
     @Override

@@ -4,7 +4,7 @@ package com.ussd.ussd.service;
 import com.ussd.ussd.model.Setting;
 
 public interface SettingService {
-  public Setting list();
+   Setting list();
 
-   public Setting save(Setting setting);
+    Setting save(Setting setting);
 }

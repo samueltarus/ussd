@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface UssdSessionRepository extends JpaRepository<UssdSession, Long> {
 
     UssdSession findByMsisdn(String phoneNumber);
-    UssdSession findBySessionId(String phoneNumber);
+    UssdSession findBySessionId(String sessionId);
 }
